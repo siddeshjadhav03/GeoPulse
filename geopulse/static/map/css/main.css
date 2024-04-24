@@ -1,0 +1,52 @@
+.container {
+    display: flex; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); 
+  }
+  .left-column {
+    width: 30%; 
+    padding: 20px; 
+  }
+  .right-column {
+    width: 70%; 
+    padding: 20px; 
+  }
+  #district {
+    font-weight: bold;
+}
+
+#district option {
+    font-weight: normal; 
+}
+
+#mapid { height: 400px; }
+
+.header {
+    margin-left: 30px;
+    padding-left: 20px; 
+    color: #000000; 
+}
+.header h1 {
+    font-weight: normal;
+    font-size: 20px; 
+    margin: 20px;
+}
+
+.main_container{
+    margin: 50px; 
+    border: 2px solid black;
+    padding: 30px; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+select {
+    width: 300px; 
+    height: 40px; 
+    padding: 5px; 
+    font-size: 16px; 
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% load static %}
+<title>GeoPulse</title>
+<link rel='stylesheet' href="{% static 'map/css/main.css' %}"></link>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script type="text/javascript" src="{% static 'map/js/main.js' %}"></script>
+</head>
+<body>
+    
+    <div class='main_container'>
+
+        <div class="heading">
+            <h1>GeoPulse</h1>
+        </div>
+<div class="container">
+    
+  <div class="left-column">
+    <select id="district">
+        <option value="" disabled selected style="display:none;">District</option>
+        {% for district in districts %}
+        <option value="{{ district }}">{{ district }}</option>
+        {% endfor %}
+    </select>
+
+    <br>
+    <br>
+    <select id="village">
+        <option value="" disabled selected style="display:none;">Villages</option>
+    </select>
+  </div>
+  <div class="right-column">
+    <div id="mapid"></div>
+  </div>
+</div>
+</div>
+</body>
+</html>
